@@ -1,0 +1,84 @@
+@import "../utils/utils";
+
+.header-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+
+    img {
+        width: 35%;
+        height: auto;
+    }
+
+    &__searches {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        font-size: 11.5px;
+        background-color: $header-gray;
+        margin-top: 1.2%;
+        padding: 6px;
+
+        i {
+            margin-right: 1.7%;
+
+        }
+
+        strong {
+            font-weight: 600;
+        }
+
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            width: 16%;
+            height: auto;
+        }
+
+        &__searches {
+            background-color: transparent;
+            justify-content: flex-end;
+            align-items: flex-start;
+            padding-top: 2px;
+            margin-top: 0;
+            padding-bottom: 2px;
+            font-size: 14px;
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+
+        img {
+            width: 13.4%;
+            height: auto;
+            margin-left: 1.7%;
+        }
+
+        &__searches {
+            background-color: transparent;
+            justify-content: flex-end;
+            align-items: flex-start;
+            margin-top: 0;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            font-size: 15.5px;
+            margin-right: 1.7%;
+        }
+    }
+
+}
