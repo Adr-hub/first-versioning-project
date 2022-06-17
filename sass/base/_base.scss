@@ -4,14 +4,13 @@ body {
     margin: 0;
     max-width: 1590px;
     min-width: 300px;
-
 }
 
 * {
     box-sizing: border-box;
 }
 
-h1 {
+h1:not(.heading-block h1) {
     font-family: 'Shrikhand', cursive;
 }
 
