@@ -1,21 +1,7 @@
 @import "../utils/utils";
 
 .heading-block {
-    h1 {
-        width: 75%;
-        font-weight: 900;
-    }
 
-    @media screen and (min-width: 768px) {
-        h1 {
-            width: auto;
-            font-weight: 900;
-            margin-left: 1.7%;
-        }
-    }
-}
-
-.heading-block {
     width: 100%;
     height: auto;
     display: flex;
@@ -33,6 +19,20 @@
         font-size: 17.5px;
         color: $description-gray;
         margin-bottom: 27px;
+    }
+
+    h1 {
+        width: 75%;
+        font-weight: 900;
+        margin-bottom: 11px;
+    }
+
+    @media screen and (min-width: 768px) {
+        h1 {
+            width: auto;
+            font-weight: 900;
+            margin-left: 1.7%;
+        }
     }
 
     @media screen and (min-width:768px) and (max-width: 992px) {

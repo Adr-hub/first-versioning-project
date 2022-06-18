@@ -4,6 +4,20 @@ body {
     margin: 0;
     max-width: 1590px;
     min-width: 300px;
+
+    *:not(.spinner) {
+        animation: 3s linear timeout;
+    }
+}
+
+@keyframes timeout {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 * {
@@ -14,7 +28,6 @@ h1:not(.heading-block h1) {
     font-family: 'Shrikhand', cursive;
 }
 
-h2,
 h2,
 h3,
 h4 {
