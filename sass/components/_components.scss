@@ -67,17 +67,109 @@
 }
 
 @keyframes spin {
+
     0% {
         visibility: hidden;
+        position: relative;
+        bottom: 165px;
     }
 
     1% {
         visibility: visible;
-        transform: rotate(0turn) scale(7);
+        transform: rotate(0turn) scale(9);
+        position: relative;
+        bottom: 165px;
     }
 
     100% {
-        transform: rotate(2turn) scale(7);
+        transform: rotate(2turn) scale(9);
+        position: relative;
+        bottom: 165px;
         visibility: hidden;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .spinner {
+        text-align: center;
+        animation: 1s linear 3s forwards spinner-display;
+
+        i {
+            width: auto;
+            color: $spinner-color;
+            animation: 3s linear 0s forwards spin;
+
+        }
+    }
+
+    @keyframes spinner-display {
+        from {
+            color: transparent;
+            border: 0;
+            width: 0;
+            height: 0;
+            margin: 0;
+            visibility: hidden;
+        }
+
+        to {
+            color: transparent;
+            border: 0;
+            width: 0;
+            height: 0;
+            margin: 0;
+            visibility: hidden;
+        }
+    }
+
+    @keyframes spin {
+        0% {
+            visibility: hidden;
+        }
+
+        1% {
+            visibility: visible;
+            transform: rotate(0turn) scale(7);
+        }
+
+        100% {
+            transform: rotate(2turn) scale(7);
+            visibility: hidden;
+        }
+
+    }
+}
+
+.indications-cards__steps {
+    border-radius: 21px;
+    border: 1px transparent inset;
+    width: auto;
+    height: 67px;
+    font-weight: 700;
+    font-size: 14.5px;
+    background-color: $heading-gray;
+    box-shadow: 0.29px 6.3px 12px $header-gray;
+
+    &:hover {
+        background-color: $lightest-primary-color;
+    }
+}
+
+.indications-cards__steps-left-side {
+
+    span {
+        background-color: $primary-color;
+        color: white;
+        font-weight: normal;
+        border-radius: 20px;
+        width: 18px;
+        height: auto;
+        padding: 2px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    i {
+        color: $description-gray;
     }
 }
