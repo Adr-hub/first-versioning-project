@@ -2,11 +2,10 @@ body {
   font-family: "Roboto", sans-serif;
   width: auto;
   margin: 0;
-  max-width: 1590px;
   min-width: 300px;
 }
 body *:not(.spinner) {
-  animation: 3s linear timeout;
+  animation: 1.8s linear timeout;
 }
 
 @keyframes timeout {
@@ -48,12 +47,12 @@ h3 {
   background: linear-gradient(#ff8de0, #9e67e0);
   box-shadow: 0.4px 4px 8px #b7b7b7;
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) and (orientation: landscape) {
   .heading-block__explore-button {
     margin-left: 1.3%;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (orientation: landscape) {
   .heading-block__explore-button {
     margin-left: 1.3%;
   }
@@ -61,12 +60,12 @@ h3 {
 
 .spinner {
   text-align: center;
-  animation: 1s linear 3s forwards spinner-display;
+  animation: 1s linear 1.8s forwards spinner-display;
 }
 .spinner i {
   width: auto;
   color: #b389e7;
-  animation: 3s linear 0s forwards spin;
+  animation: 1.8s linear 0s forwards spin;
 }
 
 @keyframes spinner-display {
@@ -90,31 +89,31 @@ h3 {
 @keyframes spin {
   0% {
     visibility: hidden;
-    position: relative;
-    bottom: 165px;
+    position: fixed;
+    top: 165px;
   }
   1% {
     visibility: visible;
     transform: rotate(0turn) scale(9);
-    position: relative;
-    bottom: 165px;
+    position: fixed;
+    top: 165px;
   }
   100% {
-    transform: rotate(2turn) scale(9);
-    position: relative;
-    bottom: 165px;
+    transform: rotate(1.2turn) scale(9);
+    position: fixed;
+    top: 165px;
     visibility: hidden;
   }
 }
 @media screen and (orientation: landscape) {
   .spinner {
     text-align: center;
-    animation: 1s linear 3s forwards spinner-display;
+    animation: 1s linear 1.8s forwards spinner-display;
   }
   .spinner i {
     width: auto;
     color: #b389e7;
-    animation: 3s linear 0s forwards spin;
+    animation: 1.8s linear 0s forwards spin;
   }
   @keyframes spinner-display {
     from {
@@ -137,32 +136,32 @@ h3 {
   @keyframes spin {
     0% {
       visibility: hidden;
-      position: relative;
-      bottom: 215px;
+      position: fixed;
+      top: 215px;
     }
     1% {
       visibility: visible;
       transform: rotate(0turn) scale(9);
-      position: relative;
-      bottom: 215px;
+      position: fixed;
+      top: 215px;
     }
     100% {
-      transform: rotate(2turn) scale(9);
-      position: relative;
-      bottom: 215px;
+      transform: rotate(1.2turn) scale(9);
+      position: fixed;
+      top: 215px;
       visibility: hidden;
     }
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (orientation: landscape) {
   .spinner {
     text-align: center;
-    animation: 1s linear 3s forwards spinner-display;
+    animation: 1s linear 1.8s forwards spinner-display;
   }
   .spinner i {
     width: auto;
     color: #b389e7;
-    animation: 3s linear 0s forwards spin;
+    animation: 1.8s linear 0s forwards spin;
   }
   @keyframes spinner-display {
     from {
@@ -185,13 +184,16 @@ h3 {
   @keyframes spin {
     0% {
       visibility: hidden;
+      position: fixed;
     }
     1% {
       visibility: visible;
+      position: fixed;
       transform: rotate(0turn) scale(7);
     }
     100% {
-      transform: rotate(2turn) scale(7);
+      transform: rotate(1.2turn) scale(7);
+      position: fixed;
       visibility: hidden;
     }
   }
@@ -291,7 +293,7 @@ h3 {
   visibility: hidden;
 }
 .restaurants-cards-block__new-restaurant-image-caption .far:hover + .fas {
-  animation: 3s ease-in 0s forwards filling;
+  animation: 0.4s ease-in 0s forwards filling;
 }
 .restaurants-cards-block__new-restaurant-image-caption-details {
   font-weight: 350;
@@ -303,7 +305,7 @@ h3 {
   margin-bottom: 0;
   margin-top: 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (orientation: landscape) {
   .restaurants-cards-block__new-restaurant {
     width: 100%;
     height: 200px;
@@ -394,7 +396,7 @@ h3 {
   visibility: hidden;
 }
 .restaurants-cards-block__charonne-restaurant-image-caption .far:hover + .fas {
-  animation: 3s ease-in 0s forwards filling;
+  animation: 0.4s ease-in 0s forwards filling;
 }
 .restaurants-cards-block__charonne-restaurant-image-caption-details {
   font-weight: 350;
@@ -406,7 +408,7 @@ h3 {
   margin-bottom: 0;
   margin-top: 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (orientation: landscape) {
   .restaurants-cards-block__charonne-restaurant {
     width: 100%;
     height: 200px;
@@ -481,7 +483,7 @@ h3 {
   visibility: hidden;
 }
 .restaurants-cards-block__other-restaurants-image-caption .far:hover + .fas {
-  animation: 3s ease-in 0s forwards filling;
+  animation: 0.4s ease-in 0s forwards filling;
 }
 .restaurants-cards-block__other-restaurants-image-caption-details {
   font-weight: 350;
@@ -493,7 +495,7 @@ h3 {
   margin-bottom: 0;
   margin-top: 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (orientation: landscape) {
   .restaurants-cards-block__other-restaurants {
     width: 100%;
     height: 200px;
@@ -581,7 +583,7 @@ h3 {
 .header-block__searches strong {
   font-weight: 500;
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) and (orientation: landscape) {
   .header-block {
     flex-direction: row;
     justify-content: space-between;
@@ -605,7 +607,7 @@ h3 {
     margin-right: 1.7%;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (orientation: landscape) {
   .header-block {
     flex-direction: row;
     justify-content: space-between;
@@ -634,7 +636,7 @@ h3 {
   margin-left: 2.4%;
   margin-bottom: 4%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (orientation: landscape) {
   .spinner + h2 {
     margin-bottom: 0;
   }
@@ -649,7 +651,7 @@ h3 {
   margin-top: 0;
   margin-bottom: 45px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (orientation: landscape) {
   .indications-cards {
     flex-direction: row;
     justify-content: space-between;
@@ -671,7 +673,7 @@ h3 {
   margin-top: 2.5%;
   margin-bottom: 2.5%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (orientation: landscape) {
   .indications-cards div:nth-child(1),
 .indications-cards div:nth-child(2),
 .indications-cards div:nth-child(3) {
@@ -692,7 +694,7 @@ h3 {
   position: relative;
   top: 1.2px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (orientation: landscape) {
   .indications-cards div div:nth-child(1),
 .indications-cards div div:nth-child(2),
 .indications-cards div div:nth-child(3) {
@@ -709,7 +711,7 @@ main + h3 {
   background-color: #f6f6f6;
   font-size: 20.5px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (orientation: landscape) {
   main + h3 {
     margin-bottom: 0;
     padding-top: 0;
@@ -741,7 +743,7 @@ main + h3 {
   color: black;
   text-decoration: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (orientation: landscape) {
   .restaurants-cards-block {
     flex-direction: row;
     justify-content: space-between;
@@ -786,7 +788,7 @@ main + h3 {
 }
 .footer-block__container-first-line-icon {
   margin-left: 0;
-  width: 7.4%;
+  width: 23px;
 }
 .footer-block__container-second-line {
   display: flex;
@@ -799,7 +801,7 @@ main + h3 {
 }
 .footer-block__container-second-line-icon {
   margin-left: 0;
-  width: 7.4%;
+  width: 23px;
 }
 .footer-block__container-third-line {
   font-size: 14px;
@@ -817,7 +819,7 @@ main + h3 {
   color: #ededed;
   text-decoration: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (orientation: landscape) {
   .footer-block__container {
     display: flex;
     flex-direction: row;
@@ -849,7 +851,7 @@ main + h3 {
     text-align: center;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (orientation: landscape) {
   .footer-block {
     margin-top: 3.4%;
   }
@@ -879,14 +881,14 @@ main + h3 {
   font-weight: 900;
   margin-bottom: 11px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (orientation: landscape) {
   .heading-block h1 {
     width: auto;
     font-weight: 900;
     margin-left: 1.7%;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) and (orientation: landscape) {
   .heading-block {
     align-items: flex-start;
     text-align: left;
@@ -897,7 +899,7 @@ main + h3 {
     margin-left: 1.7%;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (orientation: landscape) {
   .heading-block {
     align-items: flex-start;
     text-align: left;

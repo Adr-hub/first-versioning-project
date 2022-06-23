@@ -27,7 +27,7 @@
         margin-bottom: 11px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (orientation: landscape) {
         h1 {
             width: auto;
             font-weight: 900;
@@ -35,7 +35,7 @@
         }
     }
 
-    @media screen and (min-width:768px) and (max-width: 992px) {
+    @media screen and (min-width:768px) and (max-width: 992px) and (orientation: landscape) {
         align-items: flex-start;
         text-align: left;
         padding-top: 4px;
@@ -46,7 +46,7 @@
         }
     }
 
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 992px) and (orientation: landscape) {
         align-items: flex-start;
         text-align: left;
         margin-top: 1.7%;

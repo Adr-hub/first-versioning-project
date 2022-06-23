@@ -33,7 +33,7 @@
         }
     }
 
-    @media screen and (min-width: 768px) and (max-width: 992px) {
+    @media screen and (min-width: 768px) and (max-width: 992px) and (orientation: landscape) {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -58,7 +58,7 @@
         }
     }
 
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 992px) and (orientation: landscape) {
 
         flex-direction: row;
         justify-content: space-between;
@@ -84,17 +84,15 @@
     }
 }
 
-
 .spinner+h2 {
     width: auto;
     margin-left: 2.4%;
     margin-bottom: 4%;
 
-    @media screen and(min-width:768px) {
+    @media screen and(min-width:768px) and (orientation: landscape) {
         margin-bottom: 0;
     }
 }
-
 
 .indications-cards {
     display: flex;
@@ -105,9 +103,7 @@
     margin-top: 0;
     margin-bottom: 45px;
 
-
-
-    @media screen and(min-width:768px) {
+    @media screen and(min-width:768px) and (orientation: landscape) {
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
@@ -128,7 +124,7 @@
     margin-top: 2.5%;
     margin-bottom: 2.5%;
 
-    @media screen and(min-width:768px) {
+    @media screen and(min-width:768px) and (orientation: landscape) {
         margin-right: 1.5%;
         margin-left: 1.5%;
     }
@@ -146,7 +142,7 @@
     position: relative;
     top: 1.2px;
 
-    @media screen and(min-width:768px) {
+    @media screen and(min-width:768px) and (orientation: landscape) {
         width: 17%
     }
 }
@@ -160,7 +156,7 @@ main+h3 {
     background-color: $heading-gray;
     font-size: 20.5px;
 
-    @media screen and(min-width:768px) {
+    @media screen and(min-width:768px) and (orientation: landscape) {
         margin-bottom: 0;
         padding-top: 0;
         padding-left: 2.2%;
@@ -196,7 +192,7 @@ main+h3 {
         text-decoration: none;
     }
 
-    @media screen and(min-width: 768px) {
+    @media screen and(min-width: 768px) and (orientation: landscape) {
         flex-direction: row;
         justify-content: space-between;
         margin: 0;
@@ -244,13 +240,11 @@ main+h3 {
             margin-bottom: 1.5%;
             width: 90%;
 
-
             &-icon {
                 margin-left: 0;
-                width: 7.4%
+                width: 23px;
             }
         }
-
 
         &-second-line {
             display: flex;
@@ -263,9 +257,8 @@ main+h3 {
 
             &-icon {
                 margin-left: 0;
-                width: 7.4%;
+                width: 23px;
             }
-
         }
 
         &-third-line {
@@ -287,7 +280,7 @@ main+h3 {
             text-decoration: none;
         }
 
-        @media screen and(min-width: 768px) {
+        @media screen and(min-width: 768px) and (orientation: landscape) {
             display: flex;
             flex-direction: row;
             align-items: baseline;
@@ -303,7 +296,6 @@ main+h3 {
                 }
             }
 
-
             &-second-line {
                 width: 28%;
                 text-align: center;
@@ -314,24 +306,19 @@ main+h3 {
                 }
             }
 
-
             &-third-line {
                 width: 28%;
                 text-align: center;
             }
 
-
             &-fourth-line {
                 width: 25%;
                 text-align: center;
             }
-
-
         }
-
     }
 
-    @media screen and(min-width: 768px) {
+    @media screen and(min-width: 768px) and (orientation: landscape) {
         margin-top: 3.4%;
     }
 }
