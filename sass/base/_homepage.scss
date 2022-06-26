@@ -1,0 +1,43 @@
+.homepage {
+    font-family: 'Roboto', sans-serif;
+    width: auto;
+    margin: 0;
+    min-width: 300px;
+
+    &>*:not(.spinner) {
+        animation: 1.4s linear timeout;
+    }
+}
+
+@keyframes timeout {
+    0% {
+
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1:not(.heading h1) {
+    font-family: 'Shrikhand', cursive;
+}
+
+h2,
+h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-title {
+    font-family: 'Shrikhand', cursive;
+    color: $footer-title-color;
+    color: $footer-title-color;
+    font-weight: 400;
+    font-size: 14.7px;
+
+}

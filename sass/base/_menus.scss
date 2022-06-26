@@ -1,0 +1,25 @@
+.menus {
+    font-family: 'Roboto', sans-serif;
+    width: auto;
+    margin: 0;
+    min-width: 300px;
+    animation: none;
+
+    * {
+        box-sizing: border-box;
+    }
+
+    h1,
+    h4 {
+        font-family: 'Shrikhand', cursive;
+    }
+
+    h2,
+    h3 {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    @media screen and (min-width:768px) {
+        background-color: $heading-gray;
+    }
+}

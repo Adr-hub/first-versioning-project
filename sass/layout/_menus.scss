@@ -1,0 +1,41 @@
+.menus-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: auto;
+    padding-top: 18px;
+    margin-left: 7%;
+
+    img {
+        width: 60%;
+        height: auto;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 992px) and (orientation: landscape) {
+        justify-content: flex-end;
+        align-items: center;
+        width: auto;
+
+        img {
+
+            width: 16%;
+            height: auto;
+            margin-left: 5.3%;
+            margin-right: 1.7%;
+        }
+    }
+
+    @media screen and (min-width: 992px) and (orientation: landscape) {
+        justify-content: flex-end;
+        align-items: center;
+        width: auto;
+
+        img {
+            width: 13.4%;
+            height: auto;
+            margin-left: 4.7%;
+            margin-right: 1.7%;
+        }
+    }
+}

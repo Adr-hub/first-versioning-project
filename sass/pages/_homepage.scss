@@ -1,0 +1,59 @@
+.heading {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 44px;
+    background-color: $heading-gray;
+
+    h1 {
+        width: 75%;
+        font-weight: 900;
+        margin-bottom: 11px;
+    }
+
+    @media screen and (min-width: 768px) and (orientation: landscape) {
+        h1 {
+            width: auto;
+            font-weight: 900;
+            margin-left: 1.7%;
+        }
+    }
+
+    @media screen and (min-width:768px) and (max-width: 992px) and (orientation: landscape) {
+        align-items: flex-start;
+        text-align: left;
+        padding-top: 4px;
+
+    }
+
+    @media screen and (min-width: 992px) and (orientation: landscape) {
+        align-items: flex-start;
+        text-align: left;
+        margin-top: 1.7%;
+    }
+}
+
+.description {
+    margin-top: 0;
+    width: 82%;
+    font-weight: 400;
+    font-size: 17.5px;
+    color: $description-gray;
+    margin-bottom: 27px;
+
+    @media screen and (min-width:768px) and (max-width: 992px) and (orientation: landscape) {
+
+        width: auto;
+        margin-left: 1.7%;
+    }
+
+    @media screen and (min-width: 992px) and (orientation: landscape) {
+
+        width: auto;
+        margin-left: 1.7%;
+    }
+}
