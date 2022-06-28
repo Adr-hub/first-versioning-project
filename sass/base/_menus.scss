@@ -1,4 +1,4 @@
-.menus {
+.menu {
     font-family: 'Roboto', sans-serif;
     width: auto;
     margin: 0;
@@ -9,13 +9,14 @@
         box-sizing: border-box;
     }
 
-    h1,
-    h4 {
+    h1 {
         font-family: 'Shrikhand', cursive;
+        font-weight: 400;
     }
 
     h2,
-    h3 {
+    h3,
+    h4:not(.footer-title) {
         font-family: 'Roboto', sans-serif;
     }
 

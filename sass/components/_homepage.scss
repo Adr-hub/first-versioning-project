@@ -64,20 +64,23 @@
     0% {
         visibility: hidden;
         position: fixed;
-        top: 165px;
+        top: 24%;
+        right: 50%;
     }
 
     1% {
         visibility: visible;
         transform: rotate(0turn) scale(9);
         position: fixed;
-        top: 165px;
+        top: 24%;
+        right: 50%;
     }
 
     100% {
         transform: rotate(1.5turn) scale(9);
         position: fixed;
-        top: 165px;
+        top: 24%;
+        right: 50%;
         visibility: hidden;
     }
 }
@@ -121,20 +124,23 @@
         0% {
             visibility: hidden;
             position: fixed;
-            top: 120px;
+            top: 45%;
+            right: 50%;
         }
 
         1% {
             visibility: visible;
             transform: rotate(0turn) scale(9);
             position: fixed;
-            top: 120px;
+            top: 45%;
+            right: 50%;
         }
 
         100% {
             transform: rotate(1.5turn) scale(9);
             position: fixed;
-            top: 120px;
+            top: 45%;
+            right: 50%;
             visibility: hidden;
         }
     }
@@ -177,17 +183,23 @@
         0% {
             visibility: hidden;
             position: fixed;
+            top: 40%;
+            right: 50%;
         }
 
         1% {
             visibility: visible;
             position: fixed;
+            top: 40%;
+            right: 50%;
             transform: rotate(0turn) scale(7);
         }
 
         100% {
             transform: rotate(1.5turn) scale(7);
             position: fixed;
+            top: 40%;
+            right: 50%;
             visibility: hidden;
         }
     }
