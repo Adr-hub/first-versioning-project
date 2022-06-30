@@ -1,0 +1,20 @@
+.order-button {
+    border: 0;
+    border-radius: 18px;
+    height: 39px;
+    width: auto;
+    padding-left: 42px;
+    padding-right: 42px;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    font-size: 13.2px;
+    color: white;
+    box-shadow: 0.2px 3px 8px $shadows;
+    background: linear-gradient($secondary-color, $primary-color);
+    cursor: pointer;
+
+    &:hover {
+        background: linear-gradient($secondary-light-color, $primary-light-color);
+        box-shadow: 0.4px 4px 8px $shadows;
+    }
+}

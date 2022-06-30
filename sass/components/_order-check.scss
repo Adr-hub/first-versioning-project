@@ -1,0 +1,22 @@
+.order {
+    border-radius: 0 13.5px 13.5px 0;
+    background-color: $tertiary-color;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 70px;
+    height: 70px;
+    display: none;
+    margin-left: 0;
+
+    i {
+        text-align: center;
+        color: white;
+        border-radius: 19px 19px 19px 19px;
+        border-color: $tertiary-color;
+        padding: 4px;
+        width: 27px;
+        height: auto;
+        color: $tertiary-color;
+        background-color: white;
+    }
+}

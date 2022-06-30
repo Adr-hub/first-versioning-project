@@ -92,7 +92,7 @@
     }
 }
 
-.indications-cards {
+.indications-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -110,9 +110,9 @@
     }
 }
 
-.indications-cards div:nth-child(1),
-.indications-cards div:nth-child(2),
-.indications-cards div:nth-child(3) {
+.indications-card div:nth-child(1),
+.indications-card div:nth-child(2),
+.indications-card div:nth-child(3) {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -128,9 +128,9 @@
     }
 }
 
-.indications-cards div div:nth-child(1),
-.indications-cards div div:nth-child(2),
-.indications-cards div div:nth-child(3) {
+.indications-card div div:nth-child(1),
+.indications-card div div:nth-child(2),
+.indications-card div div:nth-child(3) {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;

@@ -2,10 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
+    width: 65%;
     height: auto;
     padding-top: 18px;
-    margin-left: 7%;
+    margin-left: 4.5%;
 
     @media screen and (min-width: 768px) and (max-width: 992px) and (orientation: landscape) {
         justify-content: flex-end;
@@ -162,9 +162,7 @@
     }
 }
 
-.item span {
-    animation: orders 0.5s ease-in 0s;
-}
+
 
 .item .item-description:hover~.order {
     display: flex;
@@ -176,31 +174,18 @@
     i {
         animation: rotating-check 0.7s ease-in-out;
     }
-
-    @media screen and (min-width:992px) {
-        animation: none;
-        display: none;
-
-        i {
-            animation: none;
-        }
-    }
-
-
 }
 
-.item .item-description:active~.order {
+.item .item-description {
+    &:hover {
+        h4 {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
 
-    @media screen and (min-width:992px) {
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        animation: orders 0.5s ease-in 0s;
-
-        i {
-            animation: rotating-check 0.7s ease-in-out 0s;
+        +span {
+            animation: orders 0.5s ease-in 0s;
         }
     }
 }

@@ -1,0 +1,32 @@
+.steps {
+    border-radius: 21px;
+    border: 1px transparent inset;
+    width: auto;
+    height: 67px;
+    font-weight: 700;
+    font-size: 14.5px;
+    background-color: $heading-gray;
+    box-shadow: 0.29px 6.3px 12px $header-gray;
+
+    &:hover {
+        background-color: $lightest-primary-color;
+    }
+}
+
+.left-side {
+    span {
+        background-color: $primary-color;
+        color: white;
+        font-weight: normal;
+        border-radius: 20px;
+        width: 18px;
+        height: auto;
+        padding: 2px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    i {
+        color: $description-gray;
+    }
+}
