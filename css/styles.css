@@ -44,7 +44,7 @@ h3 {
   min-width: 300px;
 }
 .menu > * {
-  animation: menu-timeout 0.4s linear;
+  animation: menu-timeout 0.5s linear;
 }
 .menu * {
   box-sizing: border-box;
@@ -1190,9 +1190,14 @@ main + h3 {
 
 .button-section {
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 75px;
   display: flex;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .button-section {
+    margin-bottom: 35px;
+  }
 }
 
 .order-button-container {
