@@ -148,6 +148,9 @@
         animation: third-item-intro 0.2s ease-out 1s backwards;
     }
 
+    .item+.item+.item+.item {
+        animation: third-item-intro 0.2s ease-out 1s backwards;
+    }
 
     @media screen and (min-width: 992px) and (orientation: landscape) {
         display: flex;

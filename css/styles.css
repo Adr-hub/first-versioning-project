@@ -548,6 +548,7 @@ main img {
   overflow: clip;
   white-space: nowrap;
   text-overflow: ellipsis;
+  padding: 0;
 }
 .item span {
   font-weight: bold;
@@ -559,6 +560,7 @@ main img {
 @media screen and (min-width: 768px) and (orientation: landscape) {
   .item {
     width: auto;
+    padding: 0;
   }
   .item span {
     font-weight: 800;
@@ -586,6 +588,7 @@ main img {
   margin-top: 0;
   margin-bottom: 0;
   width: 93%;
+  margin-left: 2.2%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -596,6 +599,7 @@ main img {
   margin-top: 1%;
   margin-bottom: 0;
   width: 93%;
+  margin-left: 2.2%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -1138,6 +1142,9 @@ main + h3 {
   animation: second-item-intro 0.4s ease-out 0.8s backwards;
 }
 .items-container .item + .item + .item {
+  animation: third-item-intro 0.2s ease-out 1s backwards;
+}
+.items-container .item + .item + .item + .item {
   animation: third-item-intro 0.2s ease-out 1s backwards;
 }
 @media screen and (min-width: 992px) and (orientation: landscape) {

@@ -69,6 +69,7 @@ main img {
     overflow: clip;
     white-space: nowrap;
     text-overflow: ellipsis;
+    padding: 0;
 
     span {
         font-weight: bold;
@@ -78,9 +79,9 @@ main img {
         top: 13px;
     }
 
-
     @media screen and (min-width: 768px) and (orientation: landscape) {
         width: auto;
+        padding: 0;
 
         span {
             font-weight: 800;
@@ -109,6 +110,7 @@ main img {
         margin-top: 0;
         margin-bottom: 0;
         width: 93%;
+        margin-left: 2.2%;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -120,6 +122,7 @@ main img {
         margin-top: 1%;
         margin-bottom: 0;
         width: 93%;
+        margin-left: 2.2%;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
