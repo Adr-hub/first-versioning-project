@@ -124,7 +124,7 @@
 .item {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     width: auto;
     margin-bottom: 2.9%;
 
@@ -136,6 +136,19 @@
 .items-container {
     width: auto;
 
+    .item:first-child {
+        animation: first-item-intro 0.5s ease-out 0.7s backwards;
+    }
+
+    .item+.item {
+        animation: second-item-intro 0.4s ease-out 0.8s backwards;
+    }
+
+    .item+.item+.item {
+        animation: third-item-intro 0.2s ease-out 1s backwards;
+    }
+
+
     @media screen and (min-width: 992px) and (orientation: landscape) {
         display: flex;
         flex-direction: row;
@@ -143,6 +156,49 @@
         align-items: center;
         flex-wrap: wrap;
         width: 100%;
+    }
+}
+
+.item span {
+    animation: orders 0.5s ease-in 0s;
+}
+
+.item .item-description:hover~.order {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: orders 0.5s ease-in 0s;
+
+    i {
+        animation: rotating-check 0.7s ease-in-out;
+    }
+
+    @media screen and (min-width:992px) {
+        animation: none;
+        display: none;
+
+        i {
+            animation: none;
+        }
+    }
+
+
+}
+
+.item .item-description:active~.order {
+
+    @media screen and (min-width:992px) {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        animation: orders 0.5s ease-in 0s;
+
+        i {
+            animation: rotating-check 0.7s ease-in-out 0s;
+        }
     }
 }
 
@@ -156,4 +212,63 @@
 .order-button-container {
     width: 50%;
     text-align: center;
+}
+
+
+@keyframes first-item-intro {
+
+    from {
+        visibility: hidden;
+        transform: translateY(8px);
+    }
+
+    to {
+        visibility: visible;
+    }
+}
+
+@keyframes second-item-intro {
+
+    from {
+        visibility: hidden;
+        transform: translateY(8px);
+    }
+
+    to {
+        visibility: visible;
+    }
+}
+
+@keyframes third-item-intro {
+
+    from {
+        visibility: hidden;
+        transform: translateY(8px);
+    }
+
+    to {
+        visibility: visible;
+    }
+}
+
+
+@keyframes orders {
+    from {
+        visibility: hidden;
+        transform: translateX(70px);
+    }
+
+    to {
+        visibility: visible;
+    }
+}
+
+@keyframes rotating-check {
+    from {
+        transform: rotate(-0.5turn);
+    }
+
+    to {
+        transform: rotate(0turn);
+    }
 }

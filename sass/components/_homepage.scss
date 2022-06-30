@@ -30,12 +30,12 @@
 
 .spinner {
     text-align: center;
-    animation: 1s linear 1.4s forwards spinner-display;
+    animation: spinner-display 1s linear 1.4s forwards;
 
     i {
         width: auto;
         color: $spinner-color;
-        animation: 1.4s linear 0s forwards spin;
+        animation: spin 1.4s linear 0s forwards;
     }
 }
 
@@ -90,12 +90,12 @@
 
     .spinner {
         text-align: center;
-        animation: 1s linear 1.4s forwards spinner-display;
+        animation: spinner-display 1s linear 1.4s forwards;
 
         i {
             width: auto;
             color: $spinner-color;
-            animation: 1.4s linear 0s forwards spin;
+            animation: spin 1.4s linear 0s forwards;
         }
     }
 
@@ -150,12 +150,12 @@
 @media screen and (min-width:768px) and (orientation: landscape) {
     .spinner {
         text-align: center;
-        animation: 1s linear 1.4s forwards spinner-display;
+        animation: spinner-display 1s linear 1.4s forwards;
 
         i {
             width: auto;
             color: $spinner-color;
-            animation: 1.4s linear 0s forwards spin;
+            animation: spin 1.4s linear 0s forwards;
         }
     }
 
@@ -368,7 +368,7 @@
     }
 
     .far:hover+.fas {
-        animation: 0.4s ease-in 0s forwards filling;
+        animation: filling 0.4s ease-in 0s forwards;
     }
 
     @media screen and(min-width: 768px) and (orientation: landscape) {

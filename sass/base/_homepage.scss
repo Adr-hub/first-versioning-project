@@ -5,7 +5,7 @@
     min-width: 300px;
 
     &>*:not(.spinner) {
-        animation: 1.4s linear timeout;
+        animation: timeout 1.4s linear;
     }
 }
 

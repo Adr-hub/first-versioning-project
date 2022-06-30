@@ -5,7 +5,7 @@
   min-width: 300px;
 }
 .homepage > *:not(.spinner) {
-  animation: 1.4s linear timeout;
+  animation: timeout 1.4s linear;
 }
 
 @keyframes timeout {
@@ -42,7 +42,9 @@ h3 {
   width: auto;
   margin: 0;
   min-width: 300px;
-  animation: none;
+}
+.menu > * {
+  animation: menu-timeout 0.4s linear;
 }
 .menu * {
   box-sizing: border-box;
@@ -62,6 +64,14 @@ h3 {
   }
 }
 
+@keyframes menu-timeout {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
 .explore-button {
   border: 0;
   border-radius: 21px;
@@ -93,12 +103,12 @@ h3 {
 
 .spinner {
   text-align: center;
-  animation: 1s linear 1.4s forwards spinner-display;
+  animation: spinner-display 1s linear 1.4s forwards;
 }
 .spinner i {
   width: auto;
   color: #b389e7;
-  animation: 1.4s linear 0s forwards spin;
+  animation: spin 1.4s linear 0s forwards;
 }
 
 @keyframes spinner-display {
@@ -144,12 +154,12 @@ h3 {
 @media screen and (orientation: landscape) {
   .spinner {
     text-align: center;
-    animation: 1s linear 1.4s forwards spinner-display;
+    animation: spinner-display 1s linear 1.4s forwards;
   }
   .spinner i {
     width: auto;
     color: #b389e7;
-    animation: 1.4s linear 0s forwards spin;
+    animation: spin 1.4s linear 0s forwards;
   }
   @keyframes spinner-display {
     from {
@@ -195,12 +205,12 @@ h3 {
 @media screen and (min-width: 768px) and (orientation: landscape) {
   .spinner {
     text-align: center;
-    animation: 1s linear 1.4s forwards spinner-display;
+    animation: spinner-display 1s linear 1.4s forwards;
   }
   .spinner i {
     width: auto;
     color: #b389e7;
-    animation: 1.4s linear 0s forwards spin;
+    animation: spin 1.4s linear 0s forwards;
   }
   @keyframes spinner-display {
     from {
@@ -401,7 +411,7 @@ h3 {
   visibility: hidden;
 }
 .images-caption .far:hover + .fas {
-  animation: 0.4s ease-in 0s forwards filling;
+  animation: filling 0.4s ease-in 0s forwards;
 }
 @media screen and (min-width: 768px) and (orientation: landscape) {
   .images-caption {
@@ -530,12 +540,10 @@ main img {
 .item {
   border-radius: 13.5px;
   background-color: white;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  height: 70px;
   margin-left: 2.8%;
   margin-right: 2.8%;
   padding-left: 2.2%;
-  padding-right: 5.2%;
   box-shadow: 0.5px 3px 12px #d3d3d3;
   overflow: clip;
   white-space: nowrap;
@@ -544,50 +552,57 @@ main img {
 .item span {
   font-weight: bold;
   font-size: 13px;
+  margin-right: 3.2%;
+  position: relative;
+  top: 13px;
 }
 @media screen and (min-width: 768px) and (orientation: landscape) {
   .item {
-    overflow: visible;
     width: auto;
   }
   .item span {
     font-weight: 800;
+    margin-right: 2.2%;
   }
 }
 @media screen and (min-width: 992px) and (orientation: landscape) {
   .item {
     margin-left: 1%;
     margin-right: 1%;
-    padding-right: 3.2%;
+    padding: 0;
   }
   .item span {
+    margin-right: 3.2%;
     font-weight: 800;
   }
 }
 
 .item-description {
   margin-top: 0;
-  width: 100%;
+  width: 65%;
+  cursor: pointer;
 }
 .item-description h4 {
   margin-top: 0;
   margin-bottom: 0;
-  width: 73%;
-  white-space: normal;
+  width: 93%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .item-description p {
   font-size: 13.7px;
   font-weight: 300;
   margin-top: 1%;
   margin-bottom: 0;
-  width: 73%;
+  width: 93%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 @media screen and (min-width: 768px) and (orientation: landscape) {
   .item-description {
-    width: 100%;
+    width: 75%;
   }
   .item-description h4 {
     white-space: nowrap;
@@ -596,13 +611,17 @@ main img {
 }
 @media screen and (min-width: 992px) and (orientation: landscape) {
   .item-description {
-    width: 90%;
+    width: 65%;
   }
   .item-description h4 {
+    margin-left: 2.2%;
     white-space: normal;
     width: 96%;
     font-size: 15.5px;
   }
+}
+.item-description p {
+  margin-left: 2.2%;
 }
 
 .order-button {
@@ -623,6 +642,28 @@ main img {
 .order-button:hover {
   background: linear-gradient(#ff8de0, #9e67e0);
   box-shadow: 0.4px 4px 8px #b7b7b7;
+}
+
+.order {
+  border-radius: 0 13.5px 13.5px 0;
+  background-color: #99E2D0;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 70px;
+  height: 70px;
+  display: none;
+  margin-left: 0;
+}
+.order i {
+  text-align: center;
+  color: white;
+  border-radius: 19px 19px 19px 19px;
+  border-color: #99E2D0;
+  padding: 4px;
+  width: 27px;
+  height: auto;
+  color: #99E2D0;
+  background-color: white;
 }
 
 .header {
@@ -1077,7 +1118,7 @@ main + h3 {
 .item {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   width: auto;
   margin-bottom: 2.9%;
 }
@@ -1090,6 +1131,15 @@ main + h3 {
 .items-container {
   width: auto;
 }
+.items-container .item:first-child {
+  animation: first-item-intro 0.5s ease-out 0.7s backwards;
+}
+.items-container .item + .item {
+  animation: second-item-intro 0.4s ease-out 0.8s backwards;
+}
+.items-container .item + .item + .item {
+  animation: third-item-intro 0.2s ease-out 1s backwards;
+}
 @media screen and (min-width: 992px) and (orientation: landscape) {
   .items-container {
     display: flex;
@@ -1098,6 +1148,43 @@ main + h3 {
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
+  }
+}
+
+.item span {
+  animation: orders 0.5s ease-in 0s;
+}
+
+.item .item-description:hover ~ .order {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: orders 0.5s ease-in 0s;
+}
+.item .item-description:hover ~ .order i {
+  animation: rotating-check 0.7s ease-in-out;
+}
+@media screen and (min-width: 992px) {
+  .item .item-description:hover ~ .order {
+    animation: none;
+    display: none;
+  }
+  .item .item-description:hover ~ .order i {
+    animation: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .item .item-description:active ~ .order {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: orders 0.5s ease-in 0s;
+  }
+  .item .item-description:active ~ .order i {
+    animation: rotating-check 0.7s ease-in-out 0s;
   }
 }
 
@@ -1113,6 +1200,50 @@ main + h3 {
   text-align: center;
 }
 
+@keyframes first-item-intro {
+  from {
+    visibility: hidden;
+    transform: translateY(8px);
+  }
+  to {
+    visibility: visible;
+  }
+}
+@keyframes second-item-intro {
+  from {
+    visibility: hidden;
+    transform: translateY(8px);
+  }
+  to {
+    visibility: visible;
+  }
+}
+@keyframes third-item-intro {
+  from {
+    visibility: hidden;
+    transform: translateY(8px);
+  }
+  to {
+    visibility: visible;
+  }
+}
+@keyframes orders {
+  from {
+    visibility: hidden;
+    transform: translateX(70px);
+  }
+  to {
+    visibility: visible;
+  }
+}
+@keyframes rotating-check {
+  from {
+    transform: rotate(-0.5turn);
+  }
+  to {
+    transform: rotate(0turn);
+  }
+}
 .heading {
   width: 100%;
   height: auto;
