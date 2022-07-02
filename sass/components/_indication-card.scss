@@ -10,6 +10,10 @@
 
     &:hover {
         background-color: $lightest-primary-color;
+
+        @media screen and(min-width:768px) and (max-width: 992px) {
+            background-color: $lightest-primary-color;
+        }
     }
 }
 

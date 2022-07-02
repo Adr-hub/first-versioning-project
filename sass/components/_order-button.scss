@@ -16,5 +16,10 @@
     &:hover {
         background: linear-gradient($secondary-light-color, $primary-light-color);
         box-shadow: 0.4px 4px 8px $shadows;
+
+        @media screen and(min-width:768px) and (max-width: 992px) {
+            background: linear-gradient($secondary-light-color, $primary-light-color);
+            box-shadow: 0.4px 4px 8px $shadows;
+        }
     }
 }

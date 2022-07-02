@@ -127,8 +127,19 @@
         visibility: hidden;
     }
 
-    .far:hover+.fas {
-        animation: filling 0.4s ease-in 0s forwards;
+    .far {
+        &:hover {
+            +.fas {
+                animation: filling 0.4s ease-in 0s forwards;
+            }
+
+            @media screen and(min-width:768px) and (max-width: 992px) {
+                +.fas {
+                    animation: filling 0.4s ease-in 0s forwards;
+                }
+
+            }
+        }
     }
 
     @media screen and(min-width: 768px) and (orientation: landscape) {
