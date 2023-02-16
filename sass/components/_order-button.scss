@@ -1,5 +1,5 @@
 .order-button {
-    border: 0;
+    border: 1px transparent;
     border-radius: 18px;
     height: 39px;
     width: auto;
@@ -17,7 +17,7 @@
         background: linear-gradient($secondary-light-color, $primary-light-color);
         box-shadow: 0.4px 4px 8px $shadows;
 
-        @media screen and(min-width:768px) and (max-width: 992px) {
+        @media screen and (min-width:768px) and (max-width: 992px) {
             background: linear-gradient($secondary-light-color, $primary-light-color);
             box-shadow: 0.4px 4px 8px $shadows;
         }

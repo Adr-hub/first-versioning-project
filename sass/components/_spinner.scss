@@ -2,10 +2,13 @@
     text-align: center;
     animation: spinner-display 1s linear 1.4s forwards;
 
+
     i {
-        width: auto;
+        position: fixed;
+        width: 50%;
         color: $spinner-color;
-        animation: spin 1.4s linear 0s forwards;
+        animation: spin 1.4s linear 0s;
+        visibility: hidden;
     }
 }
 
@@ -33,24 +36,21 @@
 
     0% {
         visibility: hidden;
-        position: fixed;
-        top: 24%;
-        right: 50%;
+        top: 25%;
+        left: 25%;
     }
 
     1% {
         visibility: visible;
-        transform: rotate(0turn) scale(9);
-        position: fixed;
-        top: 24%;
-        right: 50%;
+        transform: rotate(0turn);
+        top: 25%;
+        left: 25%;
     }
 
     100% {
-        transform: rotate(1.5turn) scale(9);
-        position: fixed;
-        top: 24%;
-        right: 50%;
+        transform: rotate(1.5turn);
+        top: 25%;
+        left: 25%;
         visibility: hidden;
     }
 }
@@ -63,9 +63,11 @@
         animation: spinner-display 1s linear 1.4s forwards;
 
         i {
-            width: auto;
+            position: fixed;
+            width: 50%;
             color: $spinner-color;
-            animation: spin 1.4s linear 0s forwards;
+            animation: spin 1.4s linear 0s;
+            visibility: hidden;
         }
     }
 
@@ -93,24 +95,21 @@
 
         0% {
             visibility: hidden;
-            position: fixed;
-            top: 45%;
-            right: 50%;
+            top: 25%;
+            left: 25%;
         }
 
         1% {
             visibility: visible;
-            transform: rotate(0turn) scale(9);
-            position: fixed;
-            top: 45%;
-            right: 50%;
+            transform: rotate(0turn);
+            top: 25%;
+            left: 25%;
         }
 
         100% {
-            transform: rotate(1.5turn) scale(9);
-            position: fixed;
-            top: 45%;
-            right: 50%;
+            transform: rotate(1.5turn);
+            top: 25%;
+            left: 25%;
             visibility: hidden;
         }
     }
@@ -123,9 +122,11 @@
         animation: spinner-display 1s linear 1.4s forwards;
 
         i {
-            width: auto;
+            position: fixed;
+            width: 50%;
             color: $spinner-color;
-            animation: spin 1.4s linear 0s forwards;
+            animation: spin 1.4s linear 0s;
+            visibility: hidden;
         }
     }
 
@@ -152,24 +153,21 @@
     @keyframes spin {
         0% {
             visibility: hidden;
-            position: fixed;
-            top: 40%;
-            right: 50%;
+            top: 25%;
+            left: 25%;
         }
 
         1% {
             visibility: visible;
-            position: fixed;
-            top: 40%;
-            right: 50%;
-            transform: rotate(0turn) scale(7);
+            top: 25%;
+            left: 25%;
+            transform: rotate(0turn);
         }
 
         100% {
-            transform: rotate(1.5turn) scale(7);
-            position: fixed;
-            top: 40%;
-            right: 50%;
+            transform: rotate(1.5turn);
+            top: 25%;
+            left: 25%;
             visibility: hidden;
         }
     }

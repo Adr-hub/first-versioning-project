@@ -188,7 +188,7 @@
         width: 23%;
     }
 
-    @media screen and(min-width:768px) and (max-width: 992px) {
+    @media screen and (min-width:768px) and (max-width: 992px) {
         .order {
             margin-left: 0;
             width: 16%;
@@ -245,7 +245,7 @@
         }
 
 
-        @media screen and(min-width:768px) and (max-width: 992px) {
+        @media screen and (min-width:768px) and (max-width: 992px) {
 
             width: 80%;
 
@@ -273,7 +273,7 @@
             align-items: center;
             width: 55%;
             overflow: hidden;
-            transform: translateX(3px);
+            transform: translateX(0px);
 
             span {
                 margin-right: 0;
@@ -282,7 +282,7 @@
                 position: relative;
                 right: 3px;
 
-                @media screen and(min-width:768px) and (max-width: 992px) {
+                @media screen and (min-width:768px) and (max-width: 992px) {
                     margin-right: 0;
                     width: 55%;
                     text-align: right;
@@ -309,7 +309,7 @@
                     animation: rotating-check 0.7s ease-in-out;
                 }
 
-                @media screen and(min-width:768px) and (max-width: 992px) {
+                @media screen and (min-width:768px) and (max-width: 992px) {
 
                     i {
                         animation: rotating-check 0.7s ease-in-out;
